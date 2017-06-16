@@ -24,7 +24,8 @@
 		if ( preg_match("/[^a-z0-9.-]/i", $ADDRESS) )
 		{
 			die('Invalid Input detected. Stopping script.');
-		}	
+		}
+		
 		//blacklist comparison
 		if (in_array(strtolower($ADDRESS), $BLOCKED))
 		{

@@ -7,3 +7,5 @@ As someone who helps people mananging their webservers and websites for some ext
 My Box is currently running on Debian8. 
 
 You obviously need to install the included tools first and change the ToS and the Contacs etc. by yourself. 
+
+Only index.html and the scan.php are included. Create he rest for yourself.
