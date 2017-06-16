@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<?php
+	//Ads
+	echo include_once (dirname(__FILE__) . '/pa_antiadblock.php');
+	?>
+	
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ScanAnyWeb.site is a easy to use service for scanning websites and webserver for obvious security concerns like Information Disclosures, open ports and similiar things. Its also free.">
+    <meta name="author" content="Phillip Litzmann">
+	<meta name="keywords" content="scananywebsite, website scanner, webserver scanner, namp online, online web scanner, web scanner, webscan online, web scanner online, scan websites, scan websites online">
+
+    <title>ScanAnyWeb.site</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+    body {
+		font-family: arial;
+        padding-top: 70px;
+		color: white;
+		background-color: #111;
+		text-align: center;
+    }
+	
+	#main {
+		width: 80%;
+		max-width: 700px;
+	}
+	
+	#form {
+		text-align: left;
+		width: 100%;
+	}
+	
+	#address {
+		width: 100%;
+	}
+	
+	#scanner {
+		margin-top: 10px;
+		width: 100%;
+		max-width: 500px;
+		align: left;
+		height: 33px;
+	}
+	
+	#submit {
+		min-width: 80px;
+	}
+	
+	.btn {
+		margin-top: 10px;
+		height: 33px;
+	}
+	
+	#ads {
+		border: thin solid white;
+		margin-top: 20px
+	}
+ }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">Scan</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li>
+					<li>
+                        <a href="./licenses.html">Licenses</a>
+                    </li>
+					<li>
+                        <a href="./tos.html">ToS</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+					
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container" id="main">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Scan your webserver or website for open ports, running services and even more. For free.</h1><hr>
+                
+				<form action="scan.php" method="post" class="form-inline" style="width: 100%;">
+					<div class="form-group" id="form">
+						
+					<label for="address" width="100%">IP address or domain goes here.</label>				
+					<BR><input class="form-control" type="text" id="address" name="address" placeholder="example.com or 123.123.123.123"><BR>
+				
+					<select class="form-control" id="scanner" name="scanner">
+						<option value="whatweb">WhatWeb website identifier</option>
+						<option value="nmap">NMAP port scanner</option>
+						<option value="whois">WhoIs Lookup tool</option>
+						<option value="dnsrecon">DNS Enumeration Script</option>
+						<option value="dirb">DIRB directory bruteforce</option>
+					</select>
+	
+					<button type="submit" class="btn btn-primary" id="submit">Start Scan</button>
+					<BR><input type="checkbox" name="tos" id="tos" value="1"><label for="tos">&nbspI Agree to the <a href="./tos.html">Terms of Service</a></label>
+						
+					</div>
+				</form><BR>
+            </div>
+        </div>
+		<!-- ADs
+		<div class="dropdown" style="text-align: left;">
+			To financially support this service we run ADs.<BR> Please consider turning off your ADBlock and click some of those Ads to keep this Site alive!
+			<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Click here to see the ADs!
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li>
+					
+				</li>
+			</ul>
+		</div> -->
+		
+    </div>
+    <!-- /.container -->
+	
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
