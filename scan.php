@@ -12,7 +12,7 @@
 		$ADDRESS = $_POST["address"];
 		$SCANNER = $_POST["scanner"];
 		$AGREE = $_POST["tos"];
-		$BLOCKED = array('http://palone.ga', 'palone.ga', 'https://palone.ga', 'www.palone.ga', 'localhost', '::1', 'scananyweb.site','212.48.117.30', '127.*',''); //well a blacklist obviously
+		$BLOCKED = array('' , 'yourwebsite.xyz'); //well a blacklist obviously
 		
 		//ToS agreement check
 		if($AGREE != '1')
@@ -30,6 +30,7 @@
 		{
 			die('Blacklisted Adddress entered.');	
 		}
+		
 		//localhost only blacklist
 		if (fnmatch('127.*', $ADDRESS))
 		{
