@@ -38,7 +38,6 @@
 			die('Blacklisted Adddress entered.');	
 		}
 		
-		
 		//Set command depending on chosen scan method
 		if(strcmp($SCANNER,'dirb')==0)
 		{
