@@ -29,7 +29,7 @@
 		//blacklist comparison
 		if (in_array(strtolower($ADDRESS), $BLOCKED))
 		{
-			die('Blacklisted Adddress entered.');	
+			die('Blacklisted Address entered.');	
 		}
 		
 		//localhost only blacklist
