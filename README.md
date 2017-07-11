@@ -2,7 +2,7 @@
 
 Live version on https://scananyweb.site
 
-As someone who helps people mananging their webservers and websites for some extra cash, I decided to build a Webinterface for some tools I often use as alaways SSH-ing into my Server got annoying. You can pretty much use this with any Shell programm on linux. 
+As someone who helps people mananging people with their webservers and websites for some extra cash, I decided to build a Webinterface for some tools I often use as alaways SSH-ing into my Server got annoying. You can pretty much use this with any Shell programm on linux. 
 
 My Server is currently running on Debian 8. 
 
