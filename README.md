@@ -1,4 +1,8 @@
-# scananyweb.site
+#### scananyweb.site
+
+# DEPRECATED AND UNMAINTAINED PROJECT
+
+(Also proably unsafe, I was a big noob back then)
 
 Live version on https://scananyweb.site
 
